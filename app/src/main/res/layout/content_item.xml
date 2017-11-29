@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="102dp" android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/content_list_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/pic2"
+        />
+    <TextView
+        android:id="@+id/content_list_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_list_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:text="aaaaaaa"
+        />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/content_list_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/content_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="aaaaaaa"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/content_list_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="like"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/content_list_heart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/empty_pink_heart"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yg.a6thseminar.Activity.SignActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/maingradation"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:includeFontPadding="false"
+            android:textSize="13sp"
+            android:text="회원가입"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일!"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호!"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름!"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+
+    <Button
+        android:text="가입"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_sign_button"
+        />
+
+    <Button
+        android:id="@+id/image"
+        android:text="이미지 가져오기"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_sign_button"
+        />
+    </LinearLayout>
+</LinearLayout>
